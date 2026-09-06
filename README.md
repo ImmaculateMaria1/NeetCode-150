@@ -35,37 +35,6 @@ I'm also posting cheat sheets and breakdowns on Instagram as I go — [follow al
 
 ---
 
-## Solutions
-
-### Arrays & Hashing
-
-| # | Problem | Difficulty | Solution | Notes |
-|---|---|---|---|---|
-| 1 | [Contains Duplicate](https://leetcode.com/problems/contains-duplicate/) | Easy | [ContainsDuplicate.java](./arrays-and-hashing/ContainsDuplicate.java) | HashSet, early exit |
-| 2 | [Valid Anagram](https://leetcode.com/problems/valid-anagram/) | Easy | [ValidAnagram.java](./arrays-and-hashing/ValidAnagram.java) | Frequency count array |
-
-*(Table grows as more problems are solved)*
-
----
-
-## Structure
-
-Each solution file follows the same format:
-
-```java
-public class ProblemName {
-
-    // Brute Force — O(?) time, O(?) space
-    public ReturnType bruteForce(params) { ... }
-
-    // Better — O(?) time, O(?) space
-    public ReturnType better(params) { ... }
-
-    // Optimal — O(?) time, O(?) space
-    public ReturnType optimal(params) { ... }
-}
-```
-
 Repo layout:
 
 ```
@@ -102,13 +71,6 @@ For every problem, I work through three tiers of solutions before settling on th
 1. **Brute force** — the obvious solution, usually O(n²) or worse. Establishes correctness first.
 2. **Better** — an intermediate improvement (often via sorting or a smarter loop structure).
 3. **Optimal** — the best known time/space trade-off, typically using a hash map, hash set, two pointers, or a similar pattern.
-
-Where relevant, I also note:
-- Common interviewer follow-ups (e.g. "what if the input is a stream?", "what if we can't use extra space?")
-- Edge cases (empty input, duplicates, negative numbers, Unicode)
-- Related problems that reuse the same pattern
-
----
 
 ## Why Java
 
